@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Tool Time with Thorsten</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+
+    <style>
+      .londrina-shadow-regular {
+        font-family: "Londrina Shadow", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+    </style>
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+          <div class="londrina-shadow-regular r-fit-text">TOOL TIME with THORSTEN</div>
+          <div class="londrina-shadow-regular r-fit-text">TTT 🛠️ 🕰️ 🤓</div>
+				  <div class="londrina-shadow-regular">2024-12 🎅</div>
+          <div style="margin-bottom:-20px"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1088px-Vimlogo.svg.png" width=40 style="vertical-align: middle;"> 🎛️ .vimrc (Dotfiles)</div>
+          <div> 🔦 vim syntax highlighting</div>
+          <div> 🪟🐧 WSL Windows-Subsystem for Linux <span style="font-size:small;">(for those without 🍎)</span></div>
+          <div style="margin-top:-10px"><img src="https://avatars.githubusercontent.com/u/36100920" width=40 style="vertical-align: middle;"> Timewarrior</div>
+        </section>
+
+				<section>
+          <div style="margin-bottom:-20px"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vimlogo.svg/1088px-Vimlogo.svg.png" width=40 style="vertical-align: middle;"> 🎛️ .vimrc (Dotfiles)</div>
+          <p style="font-size:smaller;"><i>Dotfiles are configuration files used by various software programs to customize their behavior for a specific user. They are typically hidden files (the dot at the beginning of their name makes them hidden by default in Unix-like systems) and are stored in the user's home directory. Dotfiles are often used for shell configurations, application settings, and other preferences that a user may want to modify.</br><a style="font-size:smaller;" href="https://chatgpt.com">https://chatgpt.com</a></i></p>
+          <div>➡️  <a href="https://github.com/bosb005/dotfiles">https://github.com/bosb005/dotfiles</a></div>
+          <div>🚨 No company or personal information in public repro!</div>
+        </section>
+
+				<section>
+        .vimrc
+        <pre><code data-line-numbers >syntax on
+set number
+set autoindent
+
+" Highlight current line
+"set cursorline
+" Show “invisible” characters
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+" Highlight searches
+set hlsearch
+" Ignore case of searches
+set ignorecase
+" Highlight dynamically as pattern is typed
+set incsearch </code></pre>
+        </section>
+
+				<section>
+          <div> 🔦 vim syntax highlighting</div>
+          <pre style="line-height:150%">📁 .vimrc
+   📁 ftdetect
+      📄 log.vim
+   📁 syntax
+      📄 log.vim </pre>
+	        <pre><code>:set syntax=log</code></pre>
+          <div><a href="https://github.com/topics/vim-syntax">https://github.com/topics/vim-syntax</a></div>
+          <div>🏇 Copy .vim + .vimrc to all hosts you use / checkout your dotfile repro.</div>
+        </section>
+
+				<section data-background-opacity=0.3 data-background-image="https://assets.ubuntu.com/v1/a815b856-Screenshot 2024-01-26 114801.png">
+          <div> 🪟🐧 WSL Windows-Subsystem for Linux <span style="font-size:small;">(for those without 🍎)</span></div>
+        </br>
+        <div> TODO: Insert rant about no Macs at company 😳🙊💔🤷</div>
+        </br>
+        <div style="font-size:smaller;">
+        <a href="https://learn.microsoft.com/de-de/windows/wsl/install">https://learn.microsoft.com/de-de/windows/wsl/install</a>
+        </br>
+        <a href="https://documentation.ubuntu.com/wsl/en/latest/guides/install-ubuntu-wsl2/">https://documentation.ubuntu.com/wsl/en/latest/guides/install-ubuntu-wsl2</a>
+        </br>
+        <a href="https://learn.microsoft.com/de-de/windows/wsl/setup/environment">https://learn.microsoft.com/de-de/windows/wsl/setup/environment</a>
+        </div>
+        <div>'remote' code extension, code ., explorer ., windows / ubuntu partition, git, unix tools</div>
+        </section>
+
+				<section>
+          <div style="margin-top:-10px"><img src="https://avatars.githubusercontent.com/u/36100920" width=40 style="vertical-align: middle;"> Timewarrior</div>
+        <pre><code>sudo apt install timewarrior</code></pre>
+        <a href="https://timewarrior.net/docs/tutorial/">https://timewarrior.net/docs/tutorial/</a>
+        <pre><code style="font-size:smaller;">$ timew start JIRA-4711
+$ timew start meeting_scrum 10:15
+$ timew stop
+$ timew summary :week
+W49 2024-12-02 Mon regression          9:31:28 10:14:00  0:42:32
+                   meeting_scrum      10:14:00 10:30:00  0:16:00
+                   meeting_qa         10:30:00 11:00:30  0:30:30
+                   regression         11:00:30 13:01:11  2:00:41
+                   regression         13:14:40 17:45:03  4:30:23   8:00:06</code></pre>
+meeting_department, JIRA-10847</br>
+        Use one word tags only.
+
+        </section>
+				<section>
+					<div class="r-fit-text">🎅 🏝️ 🎆</div>
+        </section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+  progress: true,
+  showSlideNumber: 'all',
+  slideNumber: true,
+  //view: 'scroll',
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
